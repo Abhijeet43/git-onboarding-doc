@@ -258,6 +258,7 @@ To maintain clear and consistent commit history, follow these rules:
   - `fix:` for bug fixes.
   - `chore:` for maintenance tasks.
   - `docs:` for documentation updates.
+  - `update:` for code updates
 
 ### Examples
 
