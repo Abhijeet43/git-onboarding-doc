@@ -8,7 +8,10 @@ Git is a distributed version control system that helps developers track changes 
 
 ### What is GitHub?
 
-GitHub is a web-based platform for hosting Git repositories.
+GitHub is a web-based platform for hosting Git repositories.It enhances team collaboration by:
+
+- Allowing developers to share code securely.
+- Providing tools for version control, code reviews, and pull requests.
 
 ## Installation and Setup
 
@@ -79,8 +82,6 @@ git config --global user.email
 2. Click **Sign up** and fill out the registration form.
 3. Verify your email address and log in to your new account.
 
-
-
 ## Creating a Repository on Github
 
 ### Steps to create new repository
@@ -96,30 +97,35 @@ git config --global user.email
 ## Making Your First Commit and Push
 
 ### Steps to Make Your First Commit
+
 1. **Initialising Git:**
    Initialise git in your project so that versioning.
 
    ![alt text](./git-init.PNG)
 
 2. **Check the Repository Status:**
+
    ```bash
    git status
    ```
+
    This will show the modified and untracked files.
 
    ![alt text](./git-status.PNG)
 
 3. **Stage Your Changes:**
    Add the changes to the staging area:
+
    ```bash
    git add <file>
    git add .   # Stages all changes
    ```
 
-    ![alt text](./git-add.PNG)
+   ![alt text](./git-add.PNG)
 
 4. **Commit Your Changes:**
    Commit the staged changes with a meaningful message:
+
    ```bash
    git commit -m "feat: Add initial project setup"
    ```
@@ -127,16 +133,37 @@ git config --global user.email
    ![alt text](./git-commit.PNG)
 
 ### Push Changes to Remote Repository
-1. Push your commit to the GitHub repository:
+
+1. Change name of master to main(if required):
+
+   ```bash
+   git branch -M main
+   ```
+
+   ![alt text](./git-main.PNG)
+
+2. Set remote where file needs to be pushed:
+
+   ```bash
+   git remote add origin <github_repository_url>
+   ```
+
+   ![alt text](./git-remote.PNG)
+
+3. Push your commit to the GitHub repository:
+
    ```bash
    git push origin main
    ```
+
    Replace `main` with the branch name if you are working on a different branch.
 
-2. If this is your first push for the branch, you might need to set the upstream:
+4. If this is your first push for the branch, you might need to set the upstream:
    ```bash
    git push -u origin main
    ```
+   ![alt text](./git-push-origin.PNG)
+
 ## Cloning a GIT Repository
 
 ### Steps to Clone a Repository
@@ -239,6 +266,8 @@ fix: Resolve login issue for tea enthusiasts
 docs: Update README with chai varieties
 ```
 
+![alt text](./git-commit.PNG)
+
 ## Branching Workflow
 
 ### Branching Strategy at ChaiCode
@@ -285,9 +314,13 @@ docs: Update README with chai varieties
    ```bash
    git push -u origin <branch-name>
    ```
-2. Go to the repository on GitHub and click **Pull Requests**.
-3. Click **New Pull Request** and select your branch.
-4. Write a detailed description of the changes:
+   ![alt text](./git-push-origin.PNG)
+
+2. Go to the repository on GitHub and click **Pull Requests** and click **New Pull Request** and select your branch..
+    
+    ![alt text](./github-pull.png)
+
+3. Write a detailed description of the changes:
    - Purpose of the change.
    - Any relevant issue numbers.
    - Screenshots or testing steps if applicable.
