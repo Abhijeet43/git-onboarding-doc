@@ -99,9 +99,10 @@ git config --global user.email
 ### Steps to Make Your First Commit
 
 1. **Initialising Git:**
-   Initialise git in your project so that versioning.
 
    ![alt text](./git-init.PNG)
+
+   This will initialise git in your project so that versioning starts.
 
 2. **Check the Repository Status:**
 
@@ -311,14 +312,16 @@ docs: Update README with chai varieties
 ### Creating a Pull Request
 
 1. Push your feature branch to GitHub:
+
    ```bash
    git push -u origin <branch-name>
    ```
+
    ![alt text](./git-push-origin.PNG)
 
 2. Go to the repository on GitHub and click **Pull Requests** and click **New Pull Request** and select your branch..
-    
-    ![alt text](./github-pull.png)
+
+   ![alt text](./github-pull.png)
 
 3. Write a detailed description of the changes:
    - Purpose of the change.
